@@ -1,0 +1,9 @@
+Status: active
+
+     To                         Action      From
+     --                         ------      ----
+[ 1] 135 on eth0                REJECT FWD  Anywhere on eth1          
+[ 2] Anywhere on eth1           ALLOW IN    10.0.20.0/24              
+[ 3] 10.0.10.1 22/tcp on eth0   ALLOW IN    10.0.10.0/24              
+[ 4] 10.0.10.0/24 on eth0       ALLOW FWD   10.0.20.0/24 on eth1      
+
